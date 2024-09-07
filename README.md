@@ -15,6 +15,8 @@ Checkout the meaning for the environments variables:
 
 * ``MIXPOST_APP_PORT``, Mixpost App Port, like ``9000``.
 
+* ``MIXPOST_APP_KEY``, Mixpost app key, [generated with this link.](https://mixpost.app/tools/encryption-key-generator)
+
 * ``MIXPOST_DB_DATABASE``, Mixpost db name, like ``mixpost``.
 
 * ``MIXPOST_DB_USERNAME``, Mixpost user name, don't use the name with spaces (temporary issue).
@@ -33,10 +35,11 @@ Pull the images and run the containers, executing the following command:
 docker-compose up -d
 ```
 
-An admin user will be created automatically. Check the mixpost container logs to find out the password, executing the following command:
+An admin user will be created automatically with the following login:
 
 ```
-docker-compose logs -f mixpost
+Email:    admin@example.com
+Password: changeme
 ```
 
 You can log in to Mixpost at ``/mixpost`` using the admin user account created.

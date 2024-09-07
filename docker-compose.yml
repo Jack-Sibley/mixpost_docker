@@ -6,6 +6,7 @@ services:
         environment:
             APP_NAME: ${MIXPOST_APP_NAME}
             APP_URL: ${MIXPOST_APP_URL}
+            APP_KEY: ${MIXPOST_APP_KEY}
             DB_DATABASE: ${MIXPOST_DB_DATABASE}
             DB_USERNAME: ${MIXPOST_DB_USERNAME}
             DB_PASSWORD: ${MIXPOST_DB_PASSWORD}
